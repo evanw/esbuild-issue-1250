@@ -1,0 +1,13 @@
+{
+  // includes no files itself
+  "include": [],
+  // references all tsconfigs
+  "references": [
+    {
+      "path": "./pkg-a/tsconfig.json"
+    },
+    {
+      "path": "./pkg-b/tsconfig.json"
+    }
+  ]
+}

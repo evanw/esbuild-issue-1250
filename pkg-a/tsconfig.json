@@ -1,0 +1,11 @@
+{
+  "include": [
+    "./src"
+  ],
+  // referenced here too
+  "references": [
+    {
+      "path": "../pkg-b/tsconfig.json"
+    }
+  ]
+}
