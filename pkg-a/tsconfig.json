@@ -7,5 +7,11 @@
     {
       "path": "../pkg-b/tsconfig.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "pkg-b": ["../pkg-b/src/index.ts"]
+    }
+  }
 }

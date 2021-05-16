@@ -6,7 +6,13 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: {
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: false, // Set to true if you are using fork-ts-checker-webpack-plugin
+            projectReferences: true,
+          },
+        },
         exclude: /node_modules/,
       },
     ],

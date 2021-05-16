@@ -1,9 +1,12 @@
 {
+  "private": true,
   "workspaces": [
     "./pkg-a",
     "./pkg-b"
   ],
   "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist pkg-*/dist **/*.tsbuildinfo",
     "esbuild": "esbuild --bundle pkg-a/hello.ts --log-level=debug",
     "parcel": "parcel build pkg-a/hello.ts",
     "webpack": "webpack build",
